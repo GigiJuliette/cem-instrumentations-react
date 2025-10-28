@@ -1,0 +1,13 @@
+svg {
+  display: none;
+}
+
+.maBite {
+  padding: 3rem;
+  margin: 3rem;
+  border-radius: var(--b-radius);
+  /* background: rgba(255, 255, 255, 0.186); */
+  width: fit-content;
+  filter: drop-shadow(-8px -10px 46px rgba(0, 0, 0, 0.195));
+  backdrop-filter: brightness(1.1) blur(2px) url(#displacementFilter)
+}

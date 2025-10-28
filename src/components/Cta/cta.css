@@ -1,0 +1,44 @@
+.cta {
+  background: radial-gradient(circle, var(--bg-color)0%, var(--accent-color) 100%) padding-box,
+    radial-gradient(circle, var(--accent-color) 0%, var(--bg-color)100%) border-box;
+  animation: gradientShift 5s linear infinite;
+
+  transition: 0.3s ease-in-out;
+  background-size: 300% 300%;
+
+  border: 2px solid transparent;
+  border-radius: var(--b-radius);
+
+  font-size: var(--subtitle-fontsize);
+  padding: var(--padding) calc(var(--padding)*2);
+  margin: var(--margin);
+  width: fit-content;
+  display: block;
+
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(0.98);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.206);
+    animation-play-state: paused;
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 100% 50%;
+  }
+
+  50% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,25 @@
+body {
+  background: var(--bg-color);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  color: var(--text-color);
+  text-decoration: none;
+  font-family: "Urbanist", sans-serif;
+}
+
+main {
+  margin: var(--wrapper);
+}
+
+.cemLogo {
+  height: 4rem;
+  width: auto;
+  position: fixed;
+  margin: 25px;
+  top: 0;
+  z-index: 2;
+}

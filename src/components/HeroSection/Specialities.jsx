@@ -12,5 +12,5 @@ function Specialities() {
         <span style={{ "--delay": "8s" }}>ancrages</span>
       </div>
     </h2>)
-
 }
+export default Specialities

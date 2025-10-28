@@ -1,23 +1,31 @@
 import { useState } from 'react'
-import './App.css'
-import Sections from './components/Sections'
+
+import './App.css';
+import Cta from './components/Cta/Cta';
+import Section from './components/Section/Section';
+import Specialities from './components/HeroSection/Specialities';
+import NavBar from './components/NavBar/NavBar';
+import cemLogo from './assets/cem-logo.svg';
+import HeroSection from './components/HeroSection/HeroSection';
+import Glassmorphism from './components/Glassmorphism/Glassmorphism';
 
 function App() {
 
   return (
     <>
-      <header>
-        <h1>CEM Instrumentation <br />Votre partenaire de confiance pour les essais destructifs et contrôles dans le Sud de la France</h1>
-
-      </header>
-      <Sections title={"Qui sommes-nous?"}>
-      </Sections>
-
-      <Sections title={"Nos Services"}>
-      </Sections>
-
-      <Sections title={"Contactez-nous"}>
-      </Sections>
+      <img className="cemLogo" src={cemLogo} alt="CEM Instrumentations logo" />
+      <NavBar />
+      <main>
+        <Section anchor="hero">
+          <HeroSection />
+        </Section>
+        <Section anchor="about" title={"Qui sommes-nous?"}>
+        </Section>
+        <Section anchor="metier" title={"Nos Services"}>
+        </Section>
+        <Section anchor="contact" title={"Contactez-nous"}>
+        </Section>
+      </main>
     </>
   )
 }
