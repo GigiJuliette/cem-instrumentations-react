@@ -14,15 +14,15 @@ function App() {
 
   return (
     <>
+      <Glassmorphism />
       <ParticlesBackground bgColor="#141012" linksColor="#ee8f0b" />
-      <img className="cemLogo" src={cemLogo} alt="CEM Instrumentations logo" />
+      <img className="cemLogo glassmorphism" src={cemLogo} alt="CEM Instrumentations logo" />
       <NavBar />
       <main>
         <Section anchor="hero">
           <HeroSection />
         </Section>
         <Section anchor="about" title={"Qui sommes-nous?"}>
-          <Glassmorphism />
         </Section>
         <Section anchor="metier" title={"Nos Services"}>
         </Section>
