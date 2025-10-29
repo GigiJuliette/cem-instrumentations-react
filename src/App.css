@@ -9,6 +9,7 @@ body {
   color: var(--text-color);
   text-decoration: none;
   font-family: "Urbanist", sans-serif;
+  box-sizing: border-box;
 }
 
 main {
