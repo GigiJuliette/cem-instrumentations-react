@@ -21,7 +21,8 @@
 
   &:hover {
     transform: scale(0.98);
-    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.206);
+    box-shadow: 0 0px 50px 1px #f4bf762a,
+      0px 0px 10px 1px #000000;
     animation-play-state: paused;
   }
 }

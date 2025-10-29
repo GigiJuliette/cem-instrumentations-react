@@ -1,19 +1,27 @@
 import './cta.css';
 
-function Cta({ as = "button", href, type = "button", ctaContent }) {
-  if (as === "a") {
+function Cta({ type, href, children }) {
+  if (type === "a") {
     return (
       <a href={href} className="cta glass">
-        {ctaContent}
+        {children}
       </a>
     );
   }
-
-  return (
-    <button type={type} className="cta glass">
-      {ctaContent}
-    </button>
-  );
+  if (type === "input") {
+    return (
+      <input type={"button"} className="cta glass">
+        {children}
+      </input>
+    );
+  }
+  if (type === "button") {
+    return (
+      <button type={"buttons"} className="cta glass">
+        {children}
+      </button>
+    );
+  }
 }
 
 export default Cta;

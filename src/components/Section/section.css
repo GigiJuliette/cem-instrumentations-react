@@ -1,6 +1,7 @@
 section {
   margin: 6rem 0;
   padding: var(--padding);
+  border: 1px solid green;
 
   h3 {
     font-size: var(--title-fontsize);
