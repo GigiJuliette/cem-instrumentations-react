@@ -1,0 +1,67 @@
+h2 {
+  font-size: var(--subtitle-fontsize);
+  transform: translateX(-15%);
+}
+@media (max-width: 900px) {
+  h2 {
+    transform: translate(0, 0);
+  }
+}
+.dropping-text {
+  margin-left: 10px;
+  position: relative;
+  display: inline;
+
+  & > span {
+    position: absolute;
+    opacity: 0;
+    width: max-content;
+    animation: roll 10s linear infinite;
+    animation-delay: var(--delay);
+  }
+}
+
+@keyframes roll {
+  0% {
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -30px;
+    margin-top: 0px;
+    transform: rotate(-25deg);
+  }
+
+  3% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  5% {
+    font-size: var(--text-fontsize);
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  20% {
+    font-size: var(--text-fontsize);
+    opacity: 1;
+    margin-left: 0px;
+    margin-top: 0px;
+    transform: rotate(0deg);
+  }
+
+  27% {
+    font-size: 0px;
+    opacity: 0.5;
+    margin-left: 20px;
+    margin-top: 100px;
+  }
+
+  100% {
+    font-size: 0px;
+    opacity: 0;
+    margin-left: -30px;
+    margin-top: 0px;
+    transform: rotate(15deg);
+  }
+}

@@ -1,0 +1,21 @@
+#hero {
+  display: flex;
+  gap: var(--margin);
+  align-items: center;
+  flex-direction: column;
+  margin: 6rem 0;
+  text-align: center;
+      .line {
+      height: 1px;
+      background-color: var(--accent-color);
+      width: 100%;
+    }
+    h1{
+      font-size:var(--title-fontsize);
+      div{
+        margin:30px 0 ;
+          box-shadow: 
+    1px 1px 10px -1px #000000c8;
+      }
+    }
+}

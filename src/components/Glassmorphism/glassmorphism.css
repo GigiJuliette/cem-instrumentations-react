@@ -1,0 +1,13 @@
+.glass-svg {
+  display: none;
+}
+
+.glass {
+  border-radius: var(--b-radius);
+  filter: drop-shadow(-8px -10px 46px rgba(0, 0, 0, 0.195));
+  backdrop-filter: brightness(1.5) blur(1.5px) url(#displacementFilter);
+  box-shadow: inset 1px 1px 20px -1px #100c0e,
+    1px 1px 10px -1px #000000c8,
+    inset 0 0 3px 1px rgba(255, 255, 255, 0);
+  border: 1px solid #ee8f0b17;
+}
